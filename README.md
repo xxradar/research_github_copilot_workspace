@@ -1,4 +1,4 @@
-# research_github_copilot_workspace 
+# research_github_copilot_workspace
 
 ## How to run the Flask app
 
