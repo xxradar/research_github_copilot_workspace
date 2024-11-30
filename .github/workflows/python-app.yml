@@ -29,6 +29,9 @@ jobs:
     - name: Generate SBOM in CycloneDX format
       run: |
         trivy fs --format cyclonedx --output sbom.xml .
+    - name: Run tests
+      run: |
+        pytest
     - name: Commit and push SBOM
       run: |
         git config --global user.email "github-actions[bot]@users.noreply.github.com"
