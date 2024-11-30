@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.6",
-  "serialNumber": "urn:uuid:a949a622-b7d3-4700-874d-12120be055cf",
+  "serialNumber": "urn:uuid:1ab346fc-6e9f-4675-9b75-eb7f7bc771fe",
   "version": 1,
   "metadata": {
-    "timestamp": "2024-11-30T07:53:04+00:00",
+    "timestamp": "2024-11-30T08:29:19+00:00",
     "tools": {
       "components": [
         {
@@ -17,7 +17,7 @@
       ]
     },
     "component": {
-      "bom-ref": "eb08ac28-b3b3-46ac-a13a-bd04e386bfd9",
+      "bom-ref": "4ccf3fce-1c8d-480d-9a78-f3dbad8543b0",
       "type": "application",
       "name": ".",
       "properties": [
@@ -30,7 +30,7 @@
   },
   "components": [
     {
-      "bom-ref": "87256264-1b80-46ed-ad00-0698b2f15e6d",
+      "bom-ref": "d9d4d107-5284-4151-b2f9-a8cc52e49757",
       "type": "application",
       "name": "requirements.txt",
       "properties": [
@@ -331,7 +331,13 @@
   ],
   "dependencies": [
     {
-      "ref": "87256264-1b80-46ed-ad00-0698b2f15e6d",
+      "ref": "4ccf3fce-1c8d-480d-9a78-f3dbad8543b0",
+      "dependsOn": [
+        "d9d4d107-5284-4151-b2f9-a8cc52e49757"
+      ]
+    },
+    {
+      "ref": "d9d4d107-5284-4151-b2f9-a8cc52e49757",
       "dependsOn": [
         "pkg:pypi/blinker@1.9.0",
         "pkg:pypi/click@8.1.7",
@@ -348,12 +354,6 @@
         "pkg:pypi/tomli@2.2.1",
         "pkg:pypi/werkzeug@3.1.3",
         "pkg:pypi/zipp@3.21.0"
-      ]
-    },
-    {
-      "ref": "eb08ac28-b3b3-46ac-a13a-bd04e386bfd9",
-      "dependsOn": [
-        "87256264-1b80-46ed-ad00-0698b2f15e6d"
       ]
     },
     {
