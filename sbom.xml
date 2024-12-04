@@ -2,22 +2,22 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.6",
-  "serialNumber": "urn:uuid:2094ae54-df20-4ad1-a288-7758d74fc7c6",
+  "serialNumber": "urn:uuid:43a270d9-4689-4a9d-a313-847b8cc232af",
   "version": 1,
   "metadata": {
-    "timestamp": "2024-11-30T08:47:52+00:00",
+    "timestamp": "2024-12-04T14:16:16+00:00",
     "tools": {
       "components": [
         {
           "type": "application",
           "group": "aquasecurity",
           "name": "trivy",
-          "version": "0.57.1"
+          "version": "0.58.0"
         }
       ]
     },
     "component": {
-      "bom-ref": "22967d54-a44c-49b4-9a24-bf862d2a3577",
+      "bom-ref": "9c7693e1-8cde-448c-88cc-9e273d6c5b7b",
       "type": "application",
       "name": ".",
       "properties": [
@@ -30,7 +30,7 @@
   },
   "components": [
     {
-      "bom-ref": "540002cd-9f96-465c-a5ef-3a8083544856",
+      "bom-ref": "fdb41866-c3ff-427c-86e3-62479d44d49d",
       "type": "application",
       "name": "requirements.txt",
       "properties": [
@@ -216,10 +216,10 @@
       ]
     },
     {
-      "bom-ref": "pkg:pypi/pytest@8.3.3",
+      "bom-ref": "pkg:pypi/pytest@8.3.4",
       "type": "library",
       "name": "pytest",
-      "version": "8.3.3",
+      "version": "8.3.4",
       "licenses": [
         {
           "license": {
@@ -227,7 +227,7 @@
           }
         }
       ],
-      "purl": "pkg:pypi/pytest@8.3.3",
+      "purl": "pkg:pypi/pytest@8.3.4",
       "properties": [
         {
           "name": "aquasecurity:trivy:PkgType",
@@ -251,13 +251,13 @@
   ],
   "dependencies": [
     {
-      "ref": "22967d54-a44c-49b4-9a24-bf862d2a3577",
+      "ref": "9c7693e1-8cde-448c-88cc-9e273d6c5b7b",
       "dependsOn": [
-        "540002cd-9f96-465c-a5ef-3a8083544856"
+        "fdb41866-c3ff-427c-86e3-62479d44d49d"
       ]
     },
     {
-      "ref": "540002cd-9f96-465c-a5ef-3a8083544856",
+      "ref": "fdb41866-c3ff-427c-86e3-62479d44d49d",
       "dependsOn": [
         "pkg:pypi/blinker@1.9.0",
         "pkg:pypi/click@8.1.7",
@@ -268,7 +268,7 @@
         "pkg:pypi/markupsafe@3.0.2",
         "pkg:pypi/packaging@24.2",
         "pkg:pypi/pluggy@1.5.0",
-        "pkg:pypi/pytest@8.3.3",
+        "pkg:pypi/pytest@8.3.4",
         "pkg:pypi/werkzeug@3.1.3"
       ]
     },
@@ -309,7 +309,7 @@
       "dependsOn": []
     },
     {
-      "ref": "pkg:pypi/pytest@8.3.3",
+      "ref": "pkg:pypi/pytest@8.3.4",
       "dependsOn": []
     },
     {
