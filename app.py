@@ -1,4 +1,5 @@
 from flask import Flask, request, jsonify
+import flask
 
 app = Flask(__name__)
 
@@ -10,7 +11,8 @@ def hello_world():
 def personalized_hello():
     data = request.get_json()
     name = data.get('name', 'World')
-    return f'Hello, {name}!'
+    safe_name = flask.escape(name)
+    return f'Hello, {safe_name}!'
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8888)
